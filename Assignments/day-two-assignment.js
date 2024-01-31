@@ -11,16 +11,16 @@ let carType;
 
 // 2. Declare four variables with assigned values
 const PI = 3.14;
-const COUNTRY_CODE = 91;
-const COMPANY_NAME = 'Coditas';
-const CURRENCY_SYMBOL = 'Rs.'
+const countryCode = 91;
+const companyName = 'Coditas';
+const currencySymbol = 'Rs.'
 
 // 3. Declare variables to store your first name, last name, marital status, country and age in multiple lines.
 const firstName = 'Suyash Lawand';
 const lastName = 'Lawand';
 const maritialStatus = 'Single';
 const country = 'India';
-const age = 23;
+let age = 23;
 
 // 4. Declare variables to store your father name, mother name, and fatherAge in a single line
 let fatherName, motherName, fatherAge;
