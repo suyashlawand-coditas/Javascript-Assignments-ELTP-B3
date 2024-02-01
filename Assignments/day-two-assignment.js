@@ -13,7 +13,7 @@ let carType;
 const PI = 3.14;
 const countryCode = 91;
 const companyName = 'Coditas';
-const currencySymbol = 'Rs.'
+const currencySymbol = 'Rs.';
 
 // 3. Declare variables to store your first name, last name, marital status, country and age in multiple lines.
 const firstName = 'Suyash Lawand';
