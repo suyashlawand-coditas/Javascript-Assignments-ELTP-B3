@@ -25,8 +25,8 @@ console.log(randomNumberBetween50to100);
 // 5. Use console.log() and escape characters to print the following pattern.
 function printPattern(count) {
     for (let counter = 1; counter <= count; counter++) {
-        console.log( counter + '\t' + counter ** 0 + '\t' + counter ** 1 + '\t' + counter ** 2
-        + '\t' + counter ** 3);
+        console.log(counter + '\t' + counter ** 0 + '\t' + counter ** 1 + '\t' + counter ** 2
+            + '\t' + counter ** 3);
 
     }
 }
