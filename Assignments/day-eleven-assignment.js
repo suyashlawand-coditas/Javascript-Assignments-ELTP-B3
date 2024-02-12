@@ -170,7 +170,7 @@ console.log(itCompanies);
 
 // 24. First remove all the punctuations and change the string to array and count the number of words in the array, dont use regex
 let text =
-  "I love teaching and empowering people. I teach HTML, CSS, JS, Node, Python, dJango";
+  "I love teaching and empowering people. I teach HTML, CSS, JS, Node, Python, django";
 const punctuations = [".", ",", "?"];
 const textSolution = text
   .split("")
