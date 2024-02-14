@@ -298,9 +298,10 @@ const countryWithFiveChars = countries.filter(
 console.log(countryWithFiveChars);
 
 // 22. Find the longest word in the webTechs array.
-const longestWord = webTechs.filter(
-  (element) => element.length === Math.max(...webTechs.map((e) => e.length))
-)[0] || null;
+const longestWord =
+  webTechs.filter(
+    (element) => element.length === Math.max(...webTechs.map((e) => e.length))
+  )[0] || null;
 console.log(longestWord);
 
 // 23. Use the webTechs array to create the following array of arrays:
@@ -309,40 +310,46 @@ console.log(longestWord);
 const result = webTechs.map((tech) => [tech, tech.length]);
 console.log(result);
 
-// 24. An application created using MongoDB, Express, React and Node is called a MERN stack app. 
+// 24. An application created using MongoDB, Express, React and Node is called a MERN stack app.
 // Create the acronym MERN by using the array mernStack
-const MERN = mernStack.map(tech=>tech[0].toUpperCase()).join("");
+const MERN = mernStack.map((tech) => tech[0].toUpperCase()).join("");
 console.log(MERN);
 
-
-// 25. Iterate through the array, 
-const technologies = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"];
+// 25. Iterate through the array,
+const technologies = [
+  "HTML",
+  "CSS",
+  "JS",
+  "React",
+  "Redux",
+  "Node",
+  "Express",
+  "MongoDB",
+];
 // using a for loop or for of loop and print out the items.
 
 for (const tech of technologies) {
-    console.log(`The tech is: ${tech}`);
+  console.log(`The tech is: ${tech}`);
 }
 
-
 // 26. This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
-const fruits = ['banana', 'orange', 'mango', 'lemon'];
+const fruits = ["banana", "orange", "mango", "lemon"];
 const reversedFruits = [];
 
 for (let i = fruits.length - 1; i >= 0; i--) {
-    reversedFruits.push(fruits[i]);
+  reversedFruits.push(fruits[i]);
 }
 
 console.log(reversedFruits);
 
-
 // 27. Print all the elements of array as shown below.
-  const fullStack = [
-    ['HTML', 'CSS', 'JS', 'React'],
-    ['Node', 'Express', 'MongoDB']
-  ]
+const fullStack = [
+  ["HTML", "CSS", "JS", "React"],
+  ["Node", "Express", "MongoDB"],
+];
 
-const fullStackAsFlat = fullStack.flat(1)
-fullStackAsFlat.forEach((tech)=>console.log(tech));
+const fullStackAsFlat = fullStack.flat(1);
+fullStackAsFlat.forEach((tech) => console.log(tech));
 
 // OUTPUT:
 
