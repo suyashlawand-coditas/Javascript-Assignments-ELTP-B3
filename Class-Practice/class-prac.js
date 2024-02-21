@@ -1,20 +1,69 @@
-const person = {
-  name: "Suyash",
-  tech: "Backend",
-  height: 8,
+// const getWebApiData = (onSuccess, onFailure) => {
+//   const shouldSuccess = true;
+//   const dummyData = [
+//     {
+//       firstName: "Suyash",
+//       lastName: "Lawand",
+//     },
+//   ];
+
+//   setTimeout(() => {
+//     if (shouldSuccess) {
+//       return onSuccess({
+//         statusCode: 200,
+//         success: true,
+//         data: dummyData,
+//         message: null,
+//       });
+//     } else {
+//       return onFailure({
+//         statusCode: 500,
+//         success: false,
+//         data: null,
+//         message: "Something went wrong",
+//       });
+//     }
+//   }, 5000);
+// };
+
+// getWebApiData(
+//   (data) => {
+//     console.log(data);
+//   },
+//   (error) => {
+//     console.error(error);
+//   }
+// );
+
+const getWebApiData = () => {
+  const shouldSuccess = true;
+  const dummyData = [
+    {
+      firstName: "Suyash",
+      lastName: "Lawand",
+    },
+  ];
+
+  return new Promise((onSuccess, onFailure) => {
+    setTimeout(() => {
+      if (shouldSuccess) {
+        return onSuccess({
+          statusCode: 200,
+          success: true,
+          data: dummyData,
+          message: null,
+        });
+      } else {
+        return onFailure({
+          statusCode: 500,
+          success: false,
+          data: null,
+          message: "Something went wrong",
+        });
+      }
+    }, 5000);
+  });
 };
 
-const personKeys = Object.keys(person);
-for (let index = 0; index < personKeys.length; index++) {
-  const key = personKeys[index];
-  console.log(key, person[key]);
-}
+getWebApiData()
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for (const key in numbers) {
-  console.log(key);
-}
-
-for (const key in person) {
-  console.log(key);
-}
